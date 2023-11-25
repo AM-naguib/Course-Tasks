@@ -1,6 +1,6 @@
 <?php
 // Write a PHP script that records 3 digits and prints the total of the first two digits multiplied by the third digit.
- 
+
 function sum_multi($num1, $num2, $num3)
 {
     $sum = $num1 + $num2;
@@ -96,9 +96,9 @@ function check_len_odd_or_even($str)
 
 $description = "no pain , no gain ";
 
-if(strpos($description,"gain") !== false || strpos($description,"peen") !== false){
+if (strpos($description, "gain") !== false || strpos($description, "peen") !== false) {
     echo "success word";
-}else{
+} else {
     echo "wrong word";
 }
 
@@ -106,14 +106,22 @@ if(strpos($description,"gain") !== false || strpos($description,"peen") !== fals
 // A Boolean is a data type that has only two values true or false. These values often correspond to 1 (true) or 0 (false). When a 1 or a 0 is used, it's called an int Boolean. Write a PHP script that stores an int Boolean and outputs its opposite
 // (1 becomes 0 and 0 becomes 1).
 
-// مش فاهمو
+
+function convert_boolean($input){
+    if($input == 0)
+        $input =1;
+    else
+        $input = 0;
+    return $input;
+}
 
 // Write a PHP script that stores a word and determines Is the Word is Singular or Plural? (A plural word is one that ends in "s".)
-function singular_or_plural($str){
-    $last_char = $str[strlen($str)- 1];
-    if($last_char == "s"){
+function singular_or_plural($str)
+{
+    $last_char = $str[strlen($str) - 1];
+    if ($last_char == "s") {
         return "$str is Plural";
-    }else{
+    } else {
         return "$str is Singular ";
     }
 }
