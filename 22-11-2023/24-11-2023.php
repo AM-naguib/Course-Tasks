@@ -1,6 +1,6 @@
 <?php
 // Write a PHP script that records 3 digits and prints the total of the first two digits multiplied by the third digit.
-
+ 
 function sum_multi($num1, $num2, $num3)
 {
     $sum = $num1 + $num2;
