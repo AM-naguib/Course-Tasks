@@ -107,9 +107,10 @@ if (strpos($description, "gain") !== false || strpos($description, "peen") !== f
 // (1 becomes 0 and 0 becomes 1).
 
 
-function convert_boolean($input){
-    if($input == 0)
-        $input =1;
+function convert_boolean($input)
+{
+    if ($input == 0)
+        $input = 1;
     else
         $input = 0;
     return $input;
