@@ -75,7 +75,7 @@ echo implode("/", $spit_string);
 
 function check_num_odd_or_even($num)
 {
-    if ($num / 2) {
+    if ($num % 2 == 0) {
         echo "$num is even";
     } else {
         echo "$num is odd";
@@ -85,7 +85,7 @@ function check_num_odd_or_even($num)
 function check_len_odd_or_even($str)
 {
     $len = strlen($str);
-    if ($len / 2) {
+    if ($len % 2 == 0) {
         echo "$str len  is even";
     } else {
         echo "$str len is odd";
