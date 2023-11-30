@@ -2,6 +2,11 @@
 // مبحبش الحساب والله :D 
 // _______________________________________________________________________________________________________________
 // 1.	A program that calculates the average of the numbers in an array of n elements. The array is filled with random numbers.
+$nums = [423,4235,2,5,2,543,3,232,4];
+function get_average($arr){
+    $average = array_sum($arr) / count($arr);
+    return ceil($average);
+}
 
 // 2.	A program in which an array contains 10 numbers and another array 2D of size 2x5. What is required is that the second array is dictated by the first array.
 // _______________________________________________________________________________________________________________
