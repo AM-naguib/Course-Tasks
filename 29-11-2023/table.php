@@ -3,6 +3,7 @@ session_start();
 require_once("./inc/header.php");
 if(!isset($_SESSION["product"])){
     header("location:index.php");
+    die;
 }
 ?>
 <div class="container">
